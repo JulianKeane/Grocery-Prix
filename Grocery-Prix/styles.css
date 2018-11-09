@@ -12,6 +12,13 @@
 }
 
 #navbarResponsive {
-  background-color: #B0E0E6;
-  text-align: right;
+  background-color: #a9a9a9;
+}
+
+#select-a-store {
+  text-align: center;
+}
+
+#nearby{
+  text-align: center;
 }
