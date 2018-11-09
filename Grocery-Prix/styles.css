@@ -10,4 +10,9 @@
   grid-template-columns: auto auto auto;
   grid-gap: 30px;
 
+#navbarResponsive {
+  background-color: #B0E0E6;
+  
+}
+
 }
