@@ -19,7 +19,9 @@
   list-style-type: none
 }
 
-
+#review-your-cart {
+  text-align: center;
+}
 a {
   color: gray
 }
