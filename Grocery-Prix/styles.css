@@ -12,13 +12,13 @@
 }
 
 #navbarResponsive {
-  background-color: #a9a9a9;
+  background-color: #4682B4;
 }
 
-#select-a-store {
+#bottom-navbar {
   text-align: center;
+  list-style-type: none
 }
-
-#nearby{
+#select-a-store {
   text-align: center;
 }
