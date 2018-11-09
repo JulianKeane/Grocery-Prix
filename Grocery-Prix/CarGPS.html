@@ -1,12 +1,104 @@
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Grocery Prix</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles-->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+       .centered {
+  position: fixed;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+    </style>
 </head>
 <body>
-<div>
-	<a href = "index.html"> <img src="Logo.png"style="width:96px;height:126px;"></a>
-</div>
-<H1>THIS WILL BE A MAP</H1>
-<a href = "StoreGPS.html">I'm here!</a>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Profile.html" <img src = "picture/profpic.jpg" style="width:40px;height=:45px;">Profile</a>
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand"><a href = "index.html"> <img src="picture/Logo.png"style="width:57.6px;height:75.6px;"></a></a>
+        <a class="navbar-brand"><a href = "Profile.html"> <img src="picture/profpic.jpg"style="width:40px;height:40px;"></a>
+
+      </div>
+
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+      <div class="container">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Store Select
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Ingredients.html">Ingredients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CarGPS.html">GPS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="StoreGPS.html">Prix</a>
+            </li>
+      </div>
+
+    </nav>
+<div id = "map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Ralphs
+  var Ralphs = {lat: 32.865740, lng: -117.231940};
+  // The map, centered at Ralphs
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 13, center: Ralphs});
+  // The marker, positioned at Ralphs
+  var marker = new google.maps.Marker({position: Ralphs, map: map});
+}
+    </script>
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHzXIq2OfRXbf7DKL6hNllAG5AmKWknWs&callback=initMap">
+    </script>
+
+
+<a href="StoreGPS.html" class="btn btn-success btn-block" role="button">I'm here!</a>
+
 </body>
 </html>
