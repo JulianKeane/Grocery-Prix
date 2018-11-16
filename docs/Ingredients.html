@@ -18,6 +18,16 @@
     <link href="css/shop-homepage.css" rel="stylesheet">
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- accordion -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- number bar -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   </head>
 
   <body>
@@ -31,18 +41,12 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="index.html">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Loginscreen.html" <img src = "picture/profpic.jpg" style="width:40px;height=:45px;">Profile</a>
+              <a class="nav-link" href="Loginscreen.html" <img src = "picture/profpic.jpg" style="width:40px;height=:45px;">Logout</a>
             </li>
           </ul>
         </div>
@@ -78,6 +82,7 @@
 
 <H2 id="choose-ingredients">Choose your Ingredients</H2>
 
+
 <div class="container">
 
   <div class="row">
@@ -90,7 +95,7 @@
                   <input type="text" class="form-control" placeholder="Search your product" />
                   <div class="input-group-btn">
                       <div class="btn-group" role="group">
-                          <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                          <button type="button" class="btn btn-primary" img="picture/mag.jpg"><span class="glyphicon glyphicon-search"  aria-hidden="true"></span></button>
                       </div>
                   </div>
               </div>
@@ -98,9 +103,178 @@
           </div>
     </div>
   </div>
+</div>
+</div>
+<H2 id="choose-ingredients">Categories</H2>
 
-<br><br>
-<h2 class="my-2">Categories</h2>
+
+<!-- accordion tryout-->
+ <section id="service">
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Fruits and Vegetables
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+
+                                        <div class="col-lg-2 col-md-3 mb-2">
+                                          <div class="card h-100" style "width:18rem;">
+                                            <img class="card-img-top" src="picture/strawberries.jpg" alt="">
+                                            <div class="card-body">
+                                              <h4 class="card-title" id= "ingredients">Strawberries</h4>
+                                              <h5 id= "ingredients">2.99/lb</h5>
+                                              <!--<p class="card-text"></p>-->
+                                              <div class="input-group number-spinner">
+				                                            <span class="input-group-btn">
+					                                             <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span>-</button>
+				                                            </span>
+    				                                        <input type="text" class="form-control text-center" value="0">
+				                                          <span class="input-group-btn">
+					                                          <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span>+</button>
+				                                          </span>
+			                                        </div>
+                                            </div>
+
+                                          </div>
+                                            <div class="card-footer">
+                                              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                            </div>
+                                          </div>
+
+                                        <div class="col-lg-2 col-md-3 mb-2">
+                                          <div class="card h-100" style "width:18rem;">
+                                            <img class="card-img-top" src="picture/bananas.jpg" alt="">
+                                            <div class="card-body">
+                                              <h4 class="card-title" id= "ingredients">Bananas</h4>
+                                              <h5 id= "ingredients">1.99/lb</h5>
+                                              <!--<p class="card-text"></p>-->
+                                              <div class="input-group number-spinner">
+				                                            <span class="input-group-btn">
+					                                             <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span>-</button>
+				                                            </span>
+    				                                        <input type="text" class="form-control text-center" value="0">
+				                                          <span class="input-group-btn">
+					                                          <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span>+</button>
+				                                          </span>
+			                                        </div>
+                                            </div>
+                                          </div>
+                                            <div class="card-footer">
+                                              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                            </div>
+                                          </div>
+
+                                        <div class="col-lg-2 col-md-3 mb-2">
+                                          <div class="card h-100" style "width:18rem;">
+                                            <img class="card-img-top" src="picture/watermelon.jpg" alt="">
+                                            <div class="card-body">
+                                              <h4 class="card-title" id= "ingredients">Watermelon</h4>
+                                              <h5 id= "ingredients">5.99/ea</h5>
+                                              <!--<p class="card-text"></p>-->
+                                              <div class="input-group number-spinner">
+				                                            <span class="input-group-btn">
+					                                             <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span>-</button>
+				                                            </span>
+    				                                        <input type="text" class="form-control text-center" value="0">
+				                                          <span class="input-group-btn">
+					                                          <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span>+</button>
+				                                          </span>
+			                                        </div>
+                                              </div>
+                                          </div>
+                                            <div class="card-footer">
+                                              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                            </div>
+                                          </div>
+                                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Meat
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                          <div class="col-lg-2 col-md-3 mb-2">
+                            <div class="card h-100" style "width:18rem;">
+                              <img class="card-img-top" src="picture/wagyu.jpg" alt="">
+                              <div class="card-body">
+                                <h4 class="card-title"id= "ingredients">A-5 Japanese Wagyu</h4>
+                                <h5 id= "ingredients">74.99/lb</h5>
+                                <!--<p class="card-text"></p>-->
+                                <div class="input-group number-spinner">
+                                      <span class="input-group-btn">
+                                         <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span>-</button>
+                                      </span>
+                                      <input type="text" class="form-control text-center" value="0">
+                                    <span class="input-group-btn">
+                                      <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span>+</button>
+                                    </span>
+                                </div>
+                                  </div>
+                            </div>
+                              <div class="card-footer">
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Dairy
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                          <div class="col-lg-2 col-md-3 mb-2">
+                            <div class="card h-100" style "width:18rem;">
+                              <img class="card-img-top" src="picture/butter.png" alt="">
+                              <div class="card-body">
+                                <h4 class="card-title"id= "ingredients">Butter</h4>
+                                <h5 id= "ingredients">1.99/ea</h5>
+                                <!--
+                                <p class="card-text"></p> -->
+                                <div class="input-group number-spinner">
+                                      <span class="input-group-btn">
+                                         <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span>-</button>
+                                      </span>
+                                      <input type="text" class="form-control text-center" value="0">
+                                    <span class="input-group-btn">
+                                      <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span>+</button>
+                                    </span>
+                                </div>
+                                  </div>
+                            </div>
+                              <div class="card-footer">
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!---->
+<!--
 <div class="container">
   <button class="accordion">Fruits and Vegetables</button>
     <div class="panel">
@@ -194,6 +368,7 @@
         </div>
     </div>
   </div>
+-->
     <!-- /.col-lg-3 -->
 <!--
     <div class="col-lg-9">
@@ -227,6 +402,7 @@
 
       <div class="row">
 -->
+<br><br><br><br>
 <a href = "Cart.html" class="btn btn-primary btn-lg btn-block">Continue to Cart</a>
 
 
@@ -249,9 +425,25 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
-</script>
 
-<br><br><br><br><br>
+$(document).on('click', '.number-spinner button', function () {
+	var btn = $(this),
+		oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+		newVal = 0;
+
+	if (btn.attr('data-dir') == 'up') {
+		newVal = parseInt(oldValue) + 1;
+	} else {
+		if (oldValue > 1) {
+			newVal = parseInt(oldValue) - 1;
+		} else {
+			newVal = 1;
+		}
+	}
+	btn.closest('.number-spinner').find('input').val(newVal);
+});
+</script>
+<br><br>
 </body>
 
 </html>
