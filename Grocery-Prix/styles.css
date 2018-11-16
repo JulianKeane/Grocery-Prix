@@ -19,6 +19,9 @@
   list-style-type: none
 }
 
+#ingredients {
+  text-align: center;
+}
 #review-your-cart {
   text-align: center;
 }
