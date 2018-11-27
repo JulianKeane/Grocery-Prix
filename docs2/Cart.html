@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Grocery Prix</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles-->
+    <link rel = "stylesheet" type = "text/css" href = "styles.css"/>
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- numspinner -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Loginscreen.html" <img src = "picture/profpic.jpg" style="width:40px;height=:45px;">Profile</a>
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand"><a href = "index.html"> <img src="picture/Logo.png"style="width:57.6px;height:75.6px;"></a></a>
+        <a class="navbar-brand"><a href = "Loginscreen.html"> <img src="picture/profpic.jpg"style="width:40px;height:40px;"></a>
+
+      </div>
+
+    </nav>
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom" id="bottom-navbar">
+          <div class="container">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Store Select
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Ingredients.html">Ingredients</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="CarGPS.html">GPS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="StoreGPS.html">Prix</a>
+                </li>
+          </div>
+
+        </nav>
+<h1 id= "review-your-cart"> Review your Cart <h1>
+	<div class="list-group">
+	  <button type="button" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#quantityModal">Strawberries</button>
+	  <button type="button" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#quantityModal">Banana</button>
+	  <button type="button" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#quantityModal">Watermelon</button>
+	  <button type="button" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#quantityModal">A-5 Wagyu Beef</button>
+	  <button type="button" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#quantityModal">Butter</button>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="quantityModal" tabindex="-1" role="dialog" aria-labelledby="quantityModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="quantityModalLabel">How many?</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+					<div class="btn-group" role="group" aria-label="Basic example">
+            <div class="input-group number-spinner">
+                  <span class="input-group-btn">
+                     <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span>-</button>
+                  </span>
+                  <input type="text" class="form-control text-center" value="0">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span>+</button>
+                </span>
+            </div>
+					</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<!--Modal end-->
+
+
+				<a href = "CarGPS.html" class="btn btn-primary btn-lg btn-block">Take me to the store!</a>
+
+
+
+<script>
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+
+$(document).on('click', '.number-spinner button', function () {
+	var btn = $(this),
+		oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+		newVal = 0;
+
+	if (btn.attr('data-dir') == 'up') {
+		newVal = parseInt(oldValue) + 1;
+	} else {
+		if (oldValue > 1) {
+			newVal = parseInt(oldValue) - 1;
+		} else {
+			newVal = 1;
+		}
+	}
+	btn.closest('.number-spinner').find('input').val(newVal);
+});
+</script>
+<br><br>
+</body>
+
+</html>
